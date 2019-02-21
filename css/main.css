@@ -8360,7 +8360,7 @@ h6 {
   height: 100%;
   z-index: 1000;
   background: rgb(2,184,232);
-  background: radial-gradient(circle, rgba(2,184,232,1) 0%, rgba(9,71,121,1) 22%, rgba(214,0,255,1) 100%);
+  background: radial-gradient(circle, rgba(2,184,232,1) 0%, rgba(9,71,121,1) 42%);
 }
 
 #preloader img{
