@@ -125,7 +125,7 @@
 							<i>Heads Up: I keep learning by each interaction, so let's get interactive. 😎😎</i>
 						</p>
 						<div class="d-flex align-items-center mt-60">
-							<a href="" class="video-play-button">
+							<a class="video-play-button">
 								<span></span>
 							</a>
 							<div class="watch_video">
@@ -165,21 +165,18 @@
 	<!--================ End video Area =================-->
 
 	<!--================ Start CTA Area =================-->
-	<section class="cta-area">
+	<section class="cta-area" style="margin-bottom: 0px">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 col-md-12" style="overflow: hidden;">
 					<img src="img/services.png" style="width: 100% !important;">
 					<p style="font-size: 16px">Our services are tailored to help and empower you to make smarter, more confident legal decisions</p>
-					<a href="services" class="primary-btn">Click here </a>
+					<a href="services" class="primary-btn"> Check Services </a>
 				</div>
 				<img src="img/cta-bg-shape.png" alt="Just one of Infopat's Image" class="cta-shape img-fluid">
 			</div>
 		</div>
 	</section>
-
-	<!-- requires the footer file -->
-<div class="clearfix"></div>
 	<footer class="footer-area">
 		<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 			<div class="container">
@@ -226,7 +223,6 @@
 	    }, 10000)
 
 	</script>
-<!--
 <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
 <script>
   var myLandbotLivechat = new LandbotLivechat({
@@ -235,13 +231,24 @@
 </script>
 
 <script>
-  // Show a proactive message on landbot load
-  myLandbotLivechat.on('landbot-load', () => {
-    myLandbotLivechat.sendProactive("Hello there!");
-  });
-  
+
+    $('.video-play-button').click(function(e){
+    	e.preventDefault()
+    	 hellloMessage = "Hi! I'm right here,  Click Me";
+    	$('.hu-message').addClass('bounce')
+    	callText(hellloMessage);
+    })  
+
+	  myLandbotLivechat.on('landbot-load', () => {
+	    callText('Hello There!');
+	  });
+
+    function callText(textM){
+    	myLandbotLivechat.sendProactive(textM);
+    }
+    
 </script>
--->
+
 </body>
 
 </html>
