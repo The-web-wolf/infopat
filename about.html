@@ -87,7 +87,7 @@
 			</li>
 
 			<li>
-				<a href="contact">Contact Me Outside</a>
+				<a href="contact">Contact</a>
 			</li>
 		</ul>
 	</div>
@@ -131,10 +131,10 @@
 					</a>
 				</div>
 				<div class="col-lg-5 offset-lg-1 video-right">
-					<h1>Who i am <br>
-						and why i exist !</h1>
+					<h1>Who I am <br>
+						and why I exist!</h1>
 					<p>
-						I'm plainly an AI driven bot of value added services that provides accessabilities to all my users 
+						I'm plainly an AI driven legal bot of value added services that provides accessabilities to all my users 
 						<i> ( You inclusive ) </i>  ,  and bridges the gap between the legal industry and general populace
 					</p>
 
@@ -163,8 +163,8 @@
 						<!-- single counter -->
 						<div class="single_counter">
 							<div class="info-content">
-								<h4><span class="counter">50</span>+</h4>
-								<p>Itigantst engaged</p>
+								<h4>30</h4>
+								<p>Litigants engaged</p>
 							</div>
 						</div>
 					</div>
@@ -174,27 +174,22 @@
 		</div>
 	</section>
 	<!--================ End video Area =================-->
-
 	<!--================ Start CTA Area =================-->
 	<section class="cta-area" style="margin-bottom: 0px">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 col-md-12">
-					<h2>I Provide absolute information all there's to know about law</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-					<a href="services" class="primary-btn">See mY Services</a>
+				<div class="col-lg-7 col-md-12" style="overflow: hidden;">
+					<img src="img/services.png" style="width: 100% !important;">
+					<p style="font-size: 16px">Our services are tailored to help and empower you to make smarter, more confident legal decisions</p>
+					<a href="services" class="primary-btn"> Check Services </a>
 				</div>
-				<img src="img/cta-bg-shape.png" alt="" class="cta-shape img-fluid">
+				<img src="img/cta-bg-shape.png" alt="Just one of Infopat's Image" class="cta-shape img-fluid">
 			</div>
 		</div>
 	</section>
 	<!--================ End CTA Area =================-->
-<div class="clearfix"></div>
-	<footer class="footer-area section_gap">
-		<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+	<footer class="footer-area" style="padding-top:50px;">
+		<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap" style="border-top: 0px solid red">
 			<div class="container">
 				<div class="row justify-content-between" style="text-align:center">
 					Copyright &copy; 2019 All rights reserved | Infobat is a result of the general rises in the need of technical implementations in the field of law.
@@ -245,11 +240,21 @@
 </script>
 
 <script>
-  // Show a proactive message on landbot load
-  myLandbotLivechat.on('landbot-load', () => {
-    myLandbotLivechat.sendProactive("Hello there!");
-  });
-  
+
+    $('.video-play-button').click(function(e){
+    	e.preventDefault()
+    	 hellloMessage = "Hi! I'm right here,  Click Me";
+    	callText(hellloMessage);
+    })  
+
+	  myLandbotLivechat.on('landbot-load', () => {
+	    callText('Hello There!');
+	  });
+
+    function callText(textM){
+    	myLandbotLivechat.sendProactive(textM);
+    }
+    
 </script>
 
 </body>
