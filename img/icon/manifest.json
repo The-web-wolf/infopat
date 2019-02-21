@@ -5,7 +5,7 @@
  "orientation": "portrait",
  "theme_color": "#307CF7",
  "background_color": "#ffffff",
- "start_url": "/",
+ "start_url": "/infopat",
  "icons": [
   {
    "src": "android-icon-36x36.png",
