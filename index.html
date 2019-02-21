@@ -116,7 +116,7 @@
 					<div>
 						<h1 class="">
 							Hi! I'm <span>Infopat</span> <br>
-							I am an AI enabled <span>assistant</span> that discusses and helps you optimize some of your legal needs
+							an AI enabled <span>assistant</span> that discusses and helps you optimize some of your legal needs
 							 
 						</h1>
 						<br>
@@ -168,11 +168,10 @@
 	<section class="cta-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 col-md-12">
-					<h2>I can help you get arround other things with other services that i offer</h2>
-					<p>Following several researches and data i have collected and processed I have lined up other things that i possible get around for you
-					that would definitely ease your search. I would be priviledged to do stuffs for you!</p>
-					<a href="services" class="primary-btn">See my services</a>
+				<div class="col-lg-7 col-md-12" style="overflow: hidden;">
+					<img src="img/services.png" style="width: 100% !important;">
+					<p style="font-size: 16px">Our services are tailored to help and empower you to make smarter, more confident legal decisions</p>
+					<a href="services" class="primary-btn">Click here </a>
 				</div>
 				<img src="img/cta-bg-shape.png" alt="Just one of Infopat's Image" class="cta-shape img-fluid">
 			</div>
@@ -181,12 +180,11 @@
 
 	<!-- requires the footer file -->
 <div class="clearfix"></div>
-	<footer class="footer-area section_gap">
+	<footer class="footer-area">
 		<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 			<div class="container">
-				<div class="row justify-content-between">
+				<div class="row justify-content-between" >
 					Copyright &copy; 2019 All rights reserved | Infobat is a result of the general rises in the need of technical implementations in the field of law.
-			
 				</div>
 				</div>
 			</div>
@@ -223,21 +221,27 @@
 	        console.log('cannot register service worker because site is not running on a secure connection (https)')
 	    }
 
-	</script>
+	    setTimeout(function(){
+	    	$('#app-LanbotLauncher').click()
+	    }, 10000)
 
+	</script>
+<!--
 <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
 <script>
   var myLandbotLivechat = new LandbotLivechat({
     index: 'https://landbot.io/u/H-138117-8CHUZ5ILP0B5XT16/index.html',
   });
 </script>
+
 <script>
   // Show a proactive message on landbot load
   myLandbotLivechat.on('landbot-load', () => {
     myLandbotLivechat.sendProactive("Hello there!");
   });
+  
 </script>
-
+-->
 </body>
 
 </html>
