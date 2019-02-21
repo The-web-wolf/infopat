@@ -8371,3 +8371,7 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.row,.justify-content-between{
+  text-align:center !important;
+}
