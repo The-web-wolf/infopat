@@ -4828,7 +4828,8 @@ h6 {
 /* =================================== */
 .footer-area {
   min-height: 100%;
-  background: #1e1c27; }
+  background: #1e1c27;
+  text-align:center !important; }
   .footer-area h6 {
     color: #fff;
     margin-bottom: 25px;
